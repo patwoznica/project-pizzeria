@@ -29,11 +29,11 @@ export const select = {
       linkDecrease: 'a[href="#less"]',
       linkIncrease: 'a[href="#more"]',
     },
-	  datePicker: {
+    datePicker: {
       wrapper: '.date-picker',
       input: `input[name="date"]`,
     },
-	  hourPicker: {
+    hourPicker: {
       wrapper: '.hour-picker',
       input: 'input[type="range"]',
       output: '.output',

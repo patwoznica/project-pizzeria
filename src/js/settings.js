@@ -62,6 +62,17 @@ export const select = {
   nav: {
     links: '.main-nav a',
   },
+  booking: {
+    peopleAmount: '.people-amount',
+    hoursAmount: '.hours-amount',
+    tables: '.floor-plan .table',
+    floorPlan: '.floor-plan',
+    table: '.table',
+    bookButton: '.order-confirmation [type="submit"]',
+    phoneNumber: '.order-confirmation [type="tel"]',
+    address: '.order-confirmation [type="text"]',
+    starters: '.checkbox [type="checkbox"]'
+  },
 };
 
 export const classNames = {

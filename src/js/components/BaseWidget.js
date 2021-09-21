@@ -1,25 +1,19 @@
 class BaseWidget {
   constructor (wrapperElement, initialValue){
     const thisWidget = this;
-
     thisWidget.dom = {};
     thisWidget.dom.wrapper = wrapperElement;
-
     thisWidget.correctValue = initialValue;
   }
 
   get value (){
     const thisWidget = this;
-
     return thisWidget.correctValue;
   }
 
   set value(value){
     const thisWidget = this;
-
     const newValue = thisWidget.parseValue(value);
-
-    /* TODO: Add validiation */
 
     if(newValue != thisWidget.correctValue && thisWidget.isValid(newValue)){
       thisWidget.correctValue = newValue;
@@ -31,7 +25,6 @@ class BaseWidget {
 
   setValue(value){
     const thisWidget = this;
-
     thisWidget.value = value;
   }
 
@@ -45,14 +38,11 @@ class BaseWidget {
 
   renderValue(){
     const thisWidget = this;
-
     thisWidget.dom.wrapper.innerHTML = thisWidget.value;
   }
 
   announce(){
     const thisWidget = this;
-
-    //const event = new Event('updated');
     const event = new CustomEvent ('updated', {
       bubbles: true
     });

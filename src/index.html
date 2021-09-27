@@ -7,9 +7,11 @@
   <title>Pizzeria</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7b7f968a13.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="vendor/range-slider.min.css">
+<!--  <link rel="stylesheet" href="./vendor/flickity.min.css" media="screen">-->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,6 +24,7 @@
           <h2 class="logo__subtitle">the best homemade Italian food</h2>
         </div>
         <div class="main-nav">
+        <a href="#home">home</a>
         <a href="#order">Order</a>
         <a href="#booking">Booking</a>
         </div>
@@ -63,6 +66,9 @@
   </header>
 
   <div id="pages">
+  <section id="home">
+     <div id="home-wrapper container"></div>
+   </section>
    <section id="order">
      <div id="product-list" class="product-list container"></div>
    </section>
@@ -98,7 +104,125 @@
       </ul>
     </li>
   </script>
+  <script id="template-home-widget" type="text/x-handlebars-template">
+      <div class="home-container">
+        <div class="options">
+          <div class="order-online">
+            <a href="#order">
+              <h3>ORDER ONLINE</h3>
+              <p>Sed ut perspiciatis unde omnis</p>
+            </a>
+          </div>
 
+          <div class="book-table">
+            <a href="#booking">
+              <h3>BOOK TABLE</h3>
+              <p>Magni dolores eos qui ratione</p>
+            </a>
+          </div>
+
+          <div class="opening-hours">
+            <h3>OPENING HOURS:</h3>
+            <h4>TUE-SUN, 12PM - 12AM</h4>
+          </div>
+        </div>
+
+
+        <section class="main-carousel">
+          <article class="carousel-cell">
+              <div class="carousel-image">
+                <img src="images/assets/pizza-3.jpg">
+              </div>
+              <div class="carousel-post">
+                <h3>AMAZING SERVICE!</h3>
+                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis, nisi ut aliquid ex ea commodi consequatur.</p>
+                <p>John Lennon</p>
+              </div>
+          </article>
+          <article class="carousel-cell">
+            <div class="carousel-image">
+              <img src="images/assets/pizza-3.jpg">
+            </div>
+            <div class="carousel-post">
+              <h3>GREAT VENUE</h3>
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, ratione voluptatem sequi nesciunt.</p>
+              <p>Paul McCartney</p>
+            </div>
+          </article>
+          <article class="carousel-cell">
+            <div class="carousel-image">
+              <img src="images/assets/pizza-3.jpg">
+            </div>
+            <div class="carousel-post">
+              <h3>DELICIOUS FOOD!</h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+              <p>George Harrison</p>
+            </div>
+          </article>
+          <article class="carousel-cell">
+            <div class="carousel-image">
+              <img src="images/assets/pizza-3.jpg">
+            </div>
+            <div class="carousel-post">
+              <h3>GOOD SNACKS</h3>
+              <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus eveniet ut et voluptates.</p>
+              <p>Ringo Starr</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="gallery">
+          <div class="box">
+            <img src="images/assets/pizza-4.jpg">
+            <ul class="overlay">
+              <li><a href="#"><i class="fas fa-heart fa-2x"></i></a></li>
+              <li><a href="#"><i class="fas fa-share-alt fa-2x"></i></a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <img src="images/assets/pizza-5.jpg">
+            <ul class="overlay">
+              <li><a href="#"><i class="fas fa-heart fa-2x"></i></a></li>
+              <li><a href="#"><i class="fas fa-share-alt fa-2x"></i></a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <img src="images/assets/pizza-6.jpg">
+            <ul class="overlay">
+              <li><a href="#"><i class="fas fa-heart fa-2x"></i></a></li>
+              <li><a href="#"><i class="fas fa-share-alt fa-2x"></i></a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <img src="images/assets/pizza-7.jpg">
+            <ul class="overlay">
+              <li><a href="#"><i class="fas fa-heart fa-2x"></i></a></li>
+              <li><a href="#"><i class="fas fa-share-alt fa-2x"></i></a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <img src="images/assets/pizza-8.jpg">
+            <ul class="overlay">
+              <li><a href="#"><i class="fas fa-heart fa-2x"></i></a></li>
+              <li><a href="#"><i class="fas fa-share-alt fa-2x"></i></a></li>
+            </ul>
+          </div>
+          <div class="box">
+            <img src="images/assets/pizza-9.jpg">
+            <ul class="overlay">
+              <li><a href="#"><i class="fas fa-heart fa-2x"></i></a></li>
+              <li><a href="#"><i class="fas fa-share-alt fa-2x"></i></a></li>
+            </ul>
+          </div>
+        </section>
+        <footer>
+          <div class="footer">
+            <i class="fab fa-instagram fa-2x"></i>
+            <a href="#">View more on Instagram</a>
+          </div>
+        </footer>
+      </div>
+    </script>
   <script id="template-menu-product" type="text/x-handlebars-template">
     <article class="product"> <!-- product -->
 
@@ -246,6 +370,7 @@
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="vendor/range-slider.min.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!--  <script src="./vendor/flickity.pkgd.min.js"></script>-->
   <script src="js/app.js" type="module"></script>
 </body>
 </html>

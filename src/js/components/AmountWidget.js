@@ -20,21 +20,21 @@ class AmountWidget extends BaseWidget{
     thisWidget.dom.linkIncrease = thisWidget.dom.wrapper.querySelector(select.widgets.amount.linkIncrease);
     //  thisWidget.value = settings.amountWidget.defaultValue;
   }
-//  setValue(value){
-//    const thisWidget = this;
-//    const newValue = parseInt(value);
-//    //TODO: Add validation 
-//
-//    if(thisWidget.value !== newValue && !isNaN(newValue) && newValue <= settings.amountWidget.defaultMax && newValue >= settings.amountWidget.defaultMin){
-//      thisWidget.value = newValue;
-//    }
-//    //thisWidget.announce();
-//    thisWidget.dom.input.value = thisWidget.value;
-//    thisWidget.announce();
-//  }
-//  parseValue(value){
-//    return parseInt(value);
-//  }
+  //  setValue(value){
+  //    const thisWidget = this;
+  //    const newValue = parseInt(value);
+  //    //TODO: Add validation 
+  //
+  //    if(thisWidget.value !== newValue && !isNaN(newValue) && newValue <= settings.amountWidget.defaultMax && newValue >= settings.amountWidget.defaultMin){
+  //      thisWidget.value = newValue;
+  //    }
+  //    //thisWidget.announce();
+  //    thisWidget.dom.input.value = thisWidget.value;
+  //    thisWidget.announce();
+  //  }
+  //  parseValue(value){
+  //    return parseInt(value);
+  //  }
 
   isValid(value){
     return !isNaN(value)
